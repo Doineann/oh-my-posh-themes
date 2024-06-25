@@ -138,6 +138,18 @@
           "type": "java"
         },
         {
+          "background": "#ffffff",
+          "foreground": "#ec2729",
+          "invert_powerline": true,
+          "powerline_symbol": "\ue0b2",
+          "properties": {
+            "fetch_version": true
+          },
+          "style": "powerline",
+          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} \ue634 ",
+          "type": "kotlin"
+        },
+        {
           "background": "#FFDE57",
           "foreground": "#111111",
           "invert_powerline": true,
