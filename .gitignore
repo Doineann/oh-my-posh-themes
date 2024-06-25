@@ -1,0 +1,8 @@
+# ignore everything
+*
+
+# do not ignore files ending with slash (directories)
+!*/
+
+# do not ignore files ending with `.json`
+!*.json
