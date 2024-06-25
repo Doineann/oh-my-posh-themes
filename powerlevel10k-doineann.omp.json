@@ -101,6 +101,19 @@
           "type": "swift"
         },
         {
+          "background": "#ffffff",
+          "foreground": "#000081",
+          "invert_powerline": true,
+          "powerline_symbol": "\ue0b2",
+          "properties": {
+            "display_mode": "files",
+            "fetch_version": true
+          },
+          "style": "powerline",
+          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} \ue620 ",
+          "type": "lua"
+        },
+        {
           "background": "#4063D8",
           "foreground": "#111111",
           "invert_powerline": true,
