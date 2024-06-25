@@ -238,15 +238,6 @@
           "type": "root"
         },
         {
-          "background": "#c4a000",
-          "foreground": "#000000",
-          "invert_powerline": true,
-          "powerline_symbol": "\ue0b2",
-          "style": "powerline",
-          "template": " {{ .FormattedMs }} \uf252 ",
-          "type": "executiontime"
-        },
-        {
           "background": "#000000",
           "background_templates": [
             "{{ if gt .Code 0 }}#cc2222{{ end }}"
@@ -260,6 +251,19 @@
           "style": "powerline",
           "template": " {{ if gt .Code 0 }}{{ .Meaning }}{{ else }}\u2714{{ end }} ",
           "type": "exit"
+        },
+        {
+          "background": "#c4a000",
+          "foreground": "#000000",
+          "invert_powerline": true,
+          "powerline_symbol": "\ue0b2",
+          "style": "powerline",
+          "properties": {
+            "style": "roundrock",
+            "threshold": 0
+          },
+          "template": " \uf252 {{ .FormattedMs }} ",
+          "type": "executiontime"
         },
         {
           "background": "#d3d7cf",
