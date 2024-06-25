@@ -88,6 +88,19 @@
           "type": "rust"
         },
         {
+          "background": "#fe562e",
+          "foreground": "#ffffff",
+          "invert_powerline": true,
+          "powerline_symbol": "\ue0b2",
+          "properties": {
+            "display_mode": "files",
+            "fetch_version": true
+          },
+          "style": "powerline",
+          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} \ue755 ",
+          "type": "swift"
+        },
+        {
           "background": "#4063D8",
           "foreground": "#111111",
           "invert_powerline": true,
