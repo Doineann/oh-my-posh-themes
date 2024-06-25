@@ -178,7 +178,7 @@
           "foreground": "#000000",
           "invert_powerline": true,
           "style": "diamond",
-          "template": " {{ .CurrentDate | date .Format }} \uf017 ",
+          "template": " \uf017 {{ .CurrentDate | date .Format }} ",
           "trailing_diamond": "\ue0b0\u2500\u256e",
           "type": "time"
         }
