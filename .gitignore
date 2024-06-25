@@ -6,3 +6,7 @@
 
 # do not ignore files ending with `.json`
 !*.json
+
+# do not ignore the README and LICENSE
+!README.md
+!LICENSE
