@@ -260,6 +260,7 @@
           "template": "\u251C\u2500",
           "type": "text"
         },
+        // PATH
         {
           "background": "#33658A",
           "foreground": "#e4e4e4",
@@ -282,6 +283,19 @@
     {
       "alignment": "right",
       "segments": [
+        // SPOTIFY
+        {
+          "background": "#1DB954",
+          "foreground": "#011627",
+          "leading_diamond": "\ue0b2",
+          "properties": {
+            "playing_icon": "\uf1bc "
+          },
+          "style": "diamond",
+          "template": " {{ .Icon }}{{ if ne .Status \"stopped\" }}{{ .Artist }} - {{ .Track }}{{ end }} ",
+          "trailing_diamond": "\ue0b0",
+          "type": "spotify"
+        },
         {
           "foreground": "#d3d7cf",
           "style": "plain",
