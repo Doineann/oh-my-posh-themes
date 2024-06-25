@@ -304,5 +304,10 @@
   ],
   "console_title_template": "{{ .Folder }}",
   "final_space": true,
+  "transient_prompt": {
+    "background": "transparent",
+    "foreground": "#d6deeb",
+    "template": "\ue285 "
+  },  
   "version": 2
 }
