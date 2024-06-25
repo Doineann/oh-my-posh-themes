@@ -193,7 +193,7 @@
       "segments": [
         // EXIT CODE
         {
-          "background": "#0C0C0C",
+          "background": "transparent",
           "background_templates": [
             "{{ if gt .Code 0 }}#cc2222{{ end }}"
           ],
@@ -207,7 +207,7 @@
             "always_enabled": true
           },
           "style": "powerline",
-          "template": " {{ if gt .Code 0 }}{{ .Meaning }}{{ else }}\u2713{{ end }} ",
+          "template": "{{ if gt .Code 0 }} {{ .Meaning }}{{ else }} \u2713{{ end }} ",
           "type": "exit"
         },
         // EXECUTION TIME
