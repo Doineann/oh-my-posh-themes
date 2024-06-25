@@ -288,7 +288,7 @@
           "foreground": "#011627",
           "invert_powerline": true,
           "style": "diamond",
-          "leading_diamond": "\ue0ca ",
+          "leading_diamond": "\ue0ca",
           "trailing_diamond": "\ue0c8",
           "properties": {
             "playing_icon": "\uf1bc"
