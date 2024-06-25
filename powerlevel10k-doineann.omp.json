@@ -63,6 +63,18 @@
           "type": "node"
         },
         {
+          "background": "#0e0e0e",
+          "foreground": "#0d6da8",
+          "invert_powerline": true,
+          "powerline_symbol": "\ue0b2",
+          "properties": {
+            "fetch_version": true
+          },
+          "style": "powerline",
+          "template": " {{ if .Unsupported }}\uf071{{ else }}{{ .Full }}{{ end }} \ue77f ",
+          "type": "dotnet"
+        },
+        {
           "background": "#00acd7",
           "foreground": "#111111",
           "invert_powerline": true,
