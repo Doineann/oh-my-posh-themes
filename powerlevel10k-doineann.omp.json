@@ -189,6 +189,7 @@
 
     {
       "alignment": "right",
+      "overflow": "hide",
       "segments": [
         // EXIT CODE
         {
@@ -268,10 +269,11 @@
           "trailing_diamond": "\ue0b0",
           "style": "diamond",
           "properties": {
-            "home_icon": " ~",
-            "style": "full"
+            "home_icon": "~",
+            "style": "mixed",
+            "mixed_threshold": 10
           },
-          "template": " \uf07c {{ .Path }} ",
+          "template": " \uf07c  {{ .Path }} ",
           "type": "path"
         }
       ],
@@ -282,6 +284,7 @@
 
     {
       "alignment": "right",
+      "overflow": "hide",      
       "segments": [
         // SPOTIFY
         {
