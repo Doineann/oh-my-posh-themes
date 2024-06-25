@@ -224,16 +224,6 @@
           "template": " \uf252 {{ .FormattedMs }} ",
           "type": "executiontime"
         },
-        // SYSTEM TIME
-        {
-          "background": "#575656",
-          "foreground": "#d6deeb",
-          "invert_powerline": true,
-          "powerline_symbol": "\ue0b2",
-          "style": "powerline",
-          "template": " \uf017 {{ .CurrentDate | date .Format }} ",          
-          "type": "time"
-        },
         // PHYSICAL MEMORY USED
         {
           "background": "#d3d7cf",
@@ -241,9 +231,15 @@
           "invert_powerline": true,
           "powerline_symbol": "\ue0b2",
           "style": "diamond",
+          "trailing_diamond": "\ue0b0",
           "template": "\uf85a {{ round .PhysicalPercentUsed .Precision }}% ",
-          "trailing_diamond": "\ue0b0\u2500\u256e",
           "type": "sysinfo"
+        },
+        {
+          "foreground": "#d3d7cf",
+          "style": "plain",
+          "template": "\u2500\u256e",
+          "type": "text"
         }
       ],
       "type": "prompt"
@@ -290,14 +286,27 @@
         {
           "background": "#1DB954",
           "foreground": "#011627",
+          "invert_powerline": true,
+          "powerline_symbol": "\ue0b2",
+          "style": "powerline",
           "leading_diamond": "\ue0b2",
-          "properties": {
-            "playing_icon": "\uf1bc "
-          },
-          "style": "diamond",
-          "template": " {{ .Icon }}{{ if ne .Status \"stopped\" }}{{ .Artist }} - {{ .Track }}{{ end }} ",
           "trailing_diamond": "\ue0b0",
+          "properties": {
+            "playing_icon": "\uf1bc"
+          },
+          "template": " {{ .Icon }} {{ if ne .Status \"stopped\" }}{{ .Artist }} - {{ .Track }}{{ end }} ",
           "type": "spotify"
+        },
+        // SYSTEM TIME
+        {
+          "background": "#575656",
+          "foreground": "#d6deeb",
+          "invert_powerline": true,
+          "powerline_symbol": "\ue0b2",
+          "style": "diamond",
+          "trailing_diamond": "\ue0b0",          
+          "template": " \uf017 {{ .CurrentDate | date .Format }} ",
+          "type": "time"
         },
         {
           "foreground": "#d3d7cf",
