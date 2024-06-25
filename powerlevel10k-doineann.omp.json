@@ -2,8 +2,11 @@
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "blocks": [
     {
+      // 1ST LINE - LEFT
+
       "alignment": "left",
-      "segments": [
+      "segments": [        
+        // OPERATING SYSTEM        
         {
           "background": "#d3d7cf",
           "foreground": "#000000",
@@ -12,6 +15,7 @@
           "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
           "type": "os"
         },
+        // USERNAME
         {
           "background": "#575656",
           "foreground": "#d6deeb",
@@ -20,6 +24,7 @@
           "template": " {{ .UserName }} ",
           "type": "session"
         },
+        // ROOT ?
         {
           "background": "#eeee55",
           "foreground": "#dd1111",
@@ -28,6 +33,7 @@
           "template": " \uf0ad ",
           "type": "root"
         },
+        // GIT STATUS ?
         {
           "background": "#4e9a06",
           "background_templates": [
@@ -48,7 +54,7 @@
           "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
           "type": "git"
         },
-        // DEVELOPMENT ENVIRONMENTS
+        // DEVELOPMENT ENVIRONMENTS ?
         {
           "background": "#689f63",
           "foreground": "#ffffff",
@@ -178,9 +184,13 @@
       ],
       "type": "prompt"
     },
+
+    // 1ST LINE - RIGHT
+
     {
       "alignment": "right",
       "segments": [
+        // EXIT CODE
         {
           "background": "#0C0C0C",
           "background_templates": [
@@ -199,6 +209,7 @@
           "template": " {{ if gt .Code 0 }}{{ .Meaning }}{{ else }}\u2713{{ end }} ",
           "type": "exit"
         },
+        // EXECUTION TIME
         {
           "background": "#375656",
           "foreground": "#a6deeb",
@@ -212,6 +223,7 @@
           "template": " \uf252 {{ .FormattedMs }} ",
           "type": "executiontime"
         },
+        // SYSTEM TIME
         {
           "background": "#575656",
           "foreground": "#d6deeb",
@@ -221,6 +233,7 @@
           "template": " \uf017 {{ .CurrentDate | date .Format }} ",          
           "type": "time"
         },
+        // PHYSICAL MEMORY USED
         {
           "background": "#d3d7cf",
           "foreground": "#000000",
@@ -234,6 +247,9 @@
       ],
       "type": "prompt"
     },
+
+    // 2ND LINE - LEFT
+
     {
       "alignment": "left",
       "newline": true,
@@ -259,7 +275,10 @@
         }
       ],
       "type": "prompt"
-    },    
+    },
+
+    // 2ND LINE - RIGHT
+
     {
       "segments": [
         {
@@ -274,6 +293,7 @@
   ],
   "console_title_template": "{{ .Folder }}",
   "final_space": true,
+  // TRANSIENT PROMPT  
   "transient_prompt": {
     "background": "transparent",
     "foreground": "#d6deeb",
