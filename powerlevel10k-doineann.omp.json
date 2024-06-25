@@ -6,7 +6,7 @@
 
       "alignment": "left",
       "segments": [        
-        // OPERATING SYSTEM        
+        // OPERATING SYSTEM
         {
           "background": "#d3d7cf",
           "foreground": "#000000",
@@ -24,7 +24,7 @@
           "template": " {{ .UserName }} ",
           "type": "session"
         },
-        // ROOT ?
+        // ROOT
         {
           "background": "#eeee55",
           "foreground": "#dd1111",
@@ -33,7 +33,7 @@
           "template": " \uf0ad ",
           "type": "root"
         },
-        // GIT STATUS ?
+        // GIT STATUS
         {
           "background": "#4e9a06",
           "background_templates": [
@@ -54,7 +54,7 @@
           "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
           "type": "git"
         },
-        // DEVELOPMENT ENVIRONMENTS ?
+        // DEVELOPMENT ENVIRONMENTS
         {
           "background": "#689f63",
           "foreground": "#ffffff",
@@ -342,7 +342,7 @@
   ],
   "console_title_template": "{{ .Folder }}",
   "final_space": true,
-  // TRANSIENT PROMPT  
+  // TRANSIENT PROMPT
   "transient_prompt": {
     "background": "transparent",
     "foreground": "#d6deeb",
