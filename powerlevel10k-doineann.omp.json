@@ -97,7 +97,7 @@
             "fetch_version": true
           },
           "style": "powerline",
-          "template": " \ue7a8 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
+          "template": " \ud83e\udd80 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "rust"
         },
         {
