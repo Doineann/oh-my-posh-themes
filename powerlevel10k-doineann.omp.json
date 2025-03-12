@@ -218,9 +218,9 @@
             "threshold": 0
           },
           "template": " \uf252 {{ .FormattedMs }} ",
-          "foreground": "#a6deeb",
+          "foreground": "#E4E4E4",
           "powerline_symbol": "\ue0b2",
-          "background": "#375656",
+          "background": "#29759C",
           "type": "executiontime",
           "style": "powerline",
           "invert_powerline": true
@@ -262,8 +262,8 @@
           "leading_diamond": "\ue0b2",
           "trailing_diamond": "\ue0b0",
           "template": " \uf07c  {{ .Path }} ",
-          "foreground": "#e4e4e4",
-          "background": "#33658A",
+          "foreground": "#E4E4E4",
+          "background": "#29759C",
           "type": "path",
           "style": "diamond"
         }
