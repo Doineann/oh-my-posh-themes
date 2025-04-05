@@ -279,8 +279,8 @@
           "properties": {
             "playing_icon": "\uf1bc"
           },
-          "leading_diamond": "\ue0ca",
-          "trailing_diamond": "\ue0c8",
+          "leading_diamond": "\ue0b2",
+          "trailing_diamond": "\ue0b0",
           "template": " {{ .Icon }} {{ if ne .Status \"stopped\" }}{{ .Artist }} - {{ .Track }}{{ end }} ",
           "foreground": "#011627",
           "background": "#1DB954",
@@ -289,7 +289,7 @@
           "invert_powerline": true
         },
         {
-          "template": "\u2001\u2001",
+          "template": "\u2001",
           "type": "text",
           "style": "plain"
         },
