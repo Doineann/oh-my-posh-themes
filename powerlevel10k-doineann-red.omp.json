@@ -222,7 +222,7 @@
           "template": " \uf252 {{ .FormattedMs }} ",
           "foreground": "#E4E4E4",
           "powerline_symbol": "\ue0b2",
-          "background": "#0d7eb9",
+          "background": "#b90d28",
           "type": "executiontime",
           "style": "powerline",
           "invert_powerline": true
@@ -265,7 +265,7 @@
           "trailing_diamond": "\ue0b0",
           "template": " \uf07c  {{ .Path }} ",
           "foreground": "#E4E4E4",
-          "background": "#0d7eb9",
+          "background": "#b90d28",
           "type": "path",
           "style": "diamond"
         }
