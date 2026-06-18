@@ -56,7 +56,7 @@
           "background": "#ddddee",
           "powerline_symbol": "\ue0b0",
           "type": "sysinfo",
-          "style": "diamond"
+          "style": "powerline"
         },
         {
           "properties": {
