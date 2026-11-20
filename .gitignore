@@ -8,6 +8,9 @@
 !*.json
 !*.sh
 
+# however, do ignore the selected/installed theme
+doineann.omp.json
+
 # do not ignore the README and LICENSE
 !README.md
 !LICENSE
