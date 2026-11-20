@@ -7,7 +7,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 BASHRC="$HOME/.bashrc"
 SNIPPET='# oh-my-posh
 if [[ "$TERM" != "linux" ]]; then
-    eval "$(oh-my-posh init bash --config ~/Themes/oh-my-posh-themes/powerlevel10k-doineann.omp.json)"
+    eval "$(oh-my-posh init bash --config ~/Themes/oh-my-posh-themes/doineann.omp.json)"
 fi'
 
 if grep -q 'oh-my-posh init bash' "$BASHRC"; then

@@ -1,17 +1,17 @@
 #!/bin/bash
 
 THEME_DIR="$HOME/Themes/oh-my-posh-themes"
-BASE_THEME="powerlevel10k-doineann.omp.json"
+BASE_THEME="doineann.omp.json"
 
 shopt -s nullglob
-files=("$THEME_DIR"/powerlevel10k-doineann-*.omp.json)
+files=("$THEME_DIR"/doineann-*.omp.json)
 colors=()
 for f in "${files[@]}"; do
-  colors+=("$(basename "$f" .omp.json | sed 's/^powerlevel10k-doineann-//')")
+  colors+=("$(basename "$f" .omp.json | sed 's/^doineann-//')")
 done
 
 if [ ${#colors[@]} -eq 0 ]; then
-  echo "No powerlevel10k-doineann color themes found in $THEME_DIR" >&2
+  echo "No doineann color themes found in $THEME_DIR" >&2
   exit 1
 fi
 
@@ -29,7 +29,7 @@ if [ -z "$selected" ]; then
   done
 fi
 
-cp "$THEME_DIR/powerlevel10k-doineann-${selected}.omp.json" "$THEME_DIR/$BASE_THEME"
+cp "$THEME_DIR/doineann-${selected}.omp.json" "$THEME_DIR/$BASE_THEME"
 echo "Applied the '${selected}' color theme."
 
 echo "To see the change, you need to restart bash (or your terminal) again or run: 'source ~/.bashrc'."
