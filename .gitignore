@@ -4,8 +4,9 @@
 # do not ignore files ending with slash (directories)
 !*/
 
-# do not ignore files ending with `.json`
+# do not ignore files ending with `.json` and `.sh`
 !*.json
+!*.sh
 
 # do not ignore the README and LICENSE
 !README.md
