@@ -1,5 +1,6 @@
-// BLUE COLOR: #0d7eb9
-// RED  COLOR: #b90d28
+// BLUE : #1177bb
+// RED  : #bb1122
+// GREEN: #337733
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "transient_prompt": {
@@ -222,7 +223,7 @@
           "template": " \uf252 {{ .FormattedMs }} ",
           "foreground": "#E4E4E4",
           "powerline_symbol": "\ue0b2",
-          "background": "#b90d28",
+          "background": "#bb1122",
           "type": "executiontime",
           "style": "powerline",
           "invert_powerline": true
@@ -265,7 +266,7 @@
           "trailing_diamond": "\ue0b0",
           "template": " \uf07c  {{ .Path }} ",
           "foreground": "#E4E4E4",
-          "background": "#b90d28",
+          "background": "#bb1122",
           "type": "path",
           "style": "diamond"
         }

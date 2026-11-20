@@ -1,5 +1,6 @@
-// BLUE COLOR: #0d7eb9
-// RED  COLOR: #b90d28
+// BLUE : #1177bb
+// RED  : #bb1122
+// GREEN: #337733
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "transient_prompt": {
