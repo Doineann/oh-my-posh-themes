@@ -229,6 +229,7 @@
           },
           "template": " \uf252 {{ .FormattedMs }} ",
           "foreground": "#e4e4e4",
+          // MAIN-COLOR:
           "background": "#bb1122",
           "powerline_symbol": "\ue0b2",
           "type": "executiontime",
@@ -275,6 +276,7 @@
           "trailing_diamond": "\ue0b0",
           "template": " \uf07c  {{ .Path }} ",
           "foreground": "#e4e4e4",
+          // MAIN-COLOR:
           "background": "#bb1122",
           "type": "path",
           "style": "diamond"

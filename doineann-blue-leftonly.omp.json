@@ -266,6 +266,7 @@
           "powerline_symbol": "\ue0b0",
           "template": " \uf07c  {{ .Path }} ",
           "foreground": "#e4e4e4",
+          // MAIN-COLOR:
           "background": "#1177bb",
           "type": "path",
           "style": "powerline"
