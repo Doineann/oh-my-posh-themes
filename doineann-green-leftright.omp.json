@@ -9,12 +9,6 @@
     "background": "transparent"
   },
   "console_title_template": "{{ .Folder }}",
-  "upgrade": {
-    "source": "cdn",
-    "interval": "168h",
-    "auto": false,
-    "notice": false
-  },
   "blocks": [
     {
       "type": "prompt",
