@@ -272,7 +272,6 @@
           "leading_diamond": " \ue0b2",
           "trailing_diamond": "\ue0b0",
           "template": " {{ .Icon }} {{ if ne .Status \"stopped\" }}{{ .Artist }} - {{ .Track }}{{ end }} ",
-          "template": " TEST ",
           "foreground": "#011627",
           "background": "#1db954",
           "type": "spotify",
